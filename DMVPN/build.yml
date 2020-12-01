@@ -47,7 +47,7 @@
       commands:
         - replace flash:candidate.cfg force
       authorize: yes
-      timeout: 120
+      timeout: 180
     register: replace
     tags: [ deploy,print_action ]
   - file: path={{build_dir}}/results state=directory
